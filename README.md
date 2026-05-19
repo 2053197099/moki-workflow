@@ -79,3 +79,14 @@ python moki_feishu_stats.py
 - `moki-workflow.md`: 当前跑通流程
 - `moki-dashboard-plan.md`: 飞书仪表盘建议
 - `moki-optimization-plan.md`: 后续优化清单
+- `MOKI_CONTEXT.md`: 后续对话和自动化执行的压缩上下文
+
+## Cleanup
+
+每次任务结束后运行：
+
+```powershell
+python moki_cleanup.py
+```
+
+这会清理临时目录、缓存、旧截图和中间产物，同时保留当前最终成品、发布包和 GitHub 文档。
